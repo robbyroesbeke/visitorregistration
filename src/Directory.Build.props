@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="9.5.0.73987" />
+    <PackageReference Include="Roslynator.Analyzers" Version="4.3.0" />
+  </ItemGroup>
+</Project>

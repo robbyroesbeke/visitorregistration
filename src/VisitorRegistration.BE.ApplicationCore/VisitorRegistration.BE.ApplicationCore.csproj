@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+        <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentResults" Version="3.15.2"/>
+        <PackageReference Include="FluentValidation" Version="11.6.0"/>
+        <PackageReference Include="Mapster" Version="7.3.0"/>
+        <PackageReference Include="MediatR" Version="12.1.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\VisitorRegistration.BE.Core\VisitorRegistration.BE.Core.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Update="SonarAnalyzer.CSharp" Version="9.5.0.73987">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+</Project>
